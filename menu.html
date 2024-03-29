@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--acaba aqui-->
+    <link rel="icon" type="image/png" href="img/tab.png">
+    <title>Alpine Colombia</title>
+    <!--BoostrapCSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Estilospersonalizados-->
+    <style>
+        * {
+            font-family: 'Merriweather', serif;
+        }
+        body{
+            background-color: #247BA0;
+        }
+    .custom-navbar{
+        background-color: #006494 !important;
+      }
+      .custom-footer{
+        background-color: #13293D !important;
+      }
+      .custom-container{
+        background-image: url(img/titulo.webp);
+        background-position: center;
+        background-size: cover;
+        height: 20rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+    </style>
+</head>
+<body>
+    <!--Head-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="img-fluid" alt="logo"  width="60" height="54"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-light disabled" aria-current="page" href="menu.html">Modelos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item   " href="quienessomos.html">Quienes somos</a></li>
+                  <li><a class="dropdown-item " href="politicas.html">Politicas de seguridad</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item  " href="contactenos.html">Contactenos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--Content-->
+<!--Title-->
+<div class="container-fluid text-center custom-container rounded d-flex flex-column justify-content-center align-items-center">
+  <h1 class="display-2 fw-bold text-light mx-auto">¡Descubre la gama Alpine!</h1>
+</div>
+<!--Model-->
+<div class="card-group mt-5 justify-content-center  ">
+  <div class="card bg-transparent border-0 text-light mx-3 rounded">
+    <img src="img/a110.webp" class="card-img-top rounded" alt="A110">
+    <div class="card-body">
+      <h5 class="card-title">A110</h5>
+      <p class="card-text">EL ESPIRITU ORIGINAL.</p>
+    </div>
+  </div>
+  <div class="card bg-transparent border-0  text-light mx-3 rounded">
+    <img src="img/A110GT.webp" class="card-img-top rounded" alt="A110 GT">
+    <div class="card-body">
+      <h5 class="card-title">A110 GT</h5>
+      <p class="card-text">EL GRAN TURISMO DE ALPINE.</p>
+    </div>
+  </div>
+</div>
+<div class="card-group mt-5 justify-content-center ">
+  <div class="card bg-transparent border-0  text-light mx-3 rounded">
+    <img src="img/A110S.webp" class="card-img-top rounded" alt="A110">
+    <div class="card-body">
+      <h5 class="card-title">A110 S</h5>
+      <p class="card-text">INTENSO CARÁCTER DEPORTIVO.</p>
+    </div>
+  </div>
+  <div class="card bg-transparent border-0  text-light mx-3 rounded">
+    <img src="img/A110R.webp" class="card-img-top rounded" alt="A110 GT">
+    <div class="card-body">
+      <h5 class="card-title">A110 R</h5>
+      <p class="card-text">EL MÁS RADICAL A110.</p>
+    </div>
+  </div>
+</div>
+  
+<!--Footer-->
+<footer class="custom-footer text-light text-center py-4 mt-5">
+    <div class="container">
+        <p>Proyecto sobre Alpine - Colegio Leon de Greiff</p>
+        <p>&copy; 2024 Oscar Felipe Pino Grajales</p>
+        <p>Última actualización: Marzo de 2024</p>
+    </div>
+</footer>
+<!--BoostrapJS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--BootstrapCSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/tab.png">
+    <title>Alpine Colombia</title>
+    <!--Estilospersonalizados-->
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #247BA0;
+        }
+        .custom-navbar {
+            background-color: #006494 !important;
+        }
+        .custom-footer {
+            background-color: #13293D !important;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .card {
+            border: none;
+        }
+        .accordion-item {
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .accordion-button {
+            background-color: #006494;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .accordion-body {
+            border-top: 1px solid rgba(0, 0, 0, 0.125);
+            padding: 15px;
+        }
+        .footer {
+            background-color: #13293D;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!--Head-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="img-fluid" alt="logo" width="60" height="54"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="menu.html">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light"  href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nosotros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienessomos.html">Quiénes somos</a></li>
+                            <li><a class="dropdown-item" href="politicas.html">Políticas de seguridad</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="contactenos.html">Contáctenos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Carrusel-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carrusel 1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Alpine A110</h5>
+                    <p class="text-light">EL ESPÍRITU ORIGINAL.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrusel 2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="text-light">La pasión por las carreras nos lleva a los límites de la ingeniería.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrusel 3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Nuestro F1</h5>
+                    <p class="text-light">Laboratorio de tecnología para nuestros vehículos.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Racing-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/alpine-a524.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FÓRMULA 1</h5>
+                        <p class="card-text">El A524 representa un concepto innovador especialmente diseñado para las próximas dos temporadas. Destaca por soluciones innovadoras, que son el resultado de las lecciones aprendidas en iteraciones anteriores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">WEC</h5>
+                        <p class="card-text">COMIENZA UN NUEVO CAPÍTULO.</p>
+                    </div>
+                    <img src="img/fondoindex.jpg" class="card-img-bottom" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contactenos-->
+    <div class="container mt-5 mb-5">
+        <div class="card text-center">
+            <div class="card-header">
+                Contáctenos
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Envíenos un mensaje</h5>
+                <p class="card-text">Estamos aquí para ayudarle con cualquier pregunta que pueda tener. No dude en contactarnos.</p>
+                <a href="contactenos.html" class="btn btn-dark">Contáctanos</a>
+            </div>
+            <div class="card-footer text-muted">
+                Alpine
+            </div>
+        </div>
+    </div>
+    <!--Acordion-->
+    <div class="container mt-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Melbourne, la ciudad amigable para los fanáticos
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Ya sea que esté en la pista o mirando desde lejos, no puede perderse el impresionante telón de fondo de Melbourne, que está a un corto trayecto en tranvía desde la sede de la F1. El circuito temporal de 5,2 km rodea el lago Albert Park y se encuentra a poca distancia de las hermosas playas de arena de St. Kilda.
+                        <br><br>
+                        El Gran Premio de Australia es uno de los más populares del calendario, con 444.631 asistentes durante los cuatro días del año pasado, lo que garantiza que los bares y restaurantes del río Yarra estén siempre llenos de aficionados a las carreras.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        LA BÚSQUEDA DE LA LIGEREZA
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Con solo 1102 kg, el A110 se distingue por una relación peso-potencia excepcional. La búsqueda de la ligereza se deja ver en cada detalle: en la elección de los materiales, en los accesorios, en los asientos, en las llantas...
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        MADE BY RACERS
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        En 1955, Jean Rédélé, emprendedor apasionado, fundó Alpine en base a tres pilares: agilidad, elegancia y espíritu competitivo.
+                        <br><br>
+                        La leyenda Alpine, diseñada por pilotos para aquellos que quieren dominar el asfalto, se ha fundado a través de victorias legendarias y un compromiso deportivo ilimitado.
+                        <br><br>
+                        Desde 2016, gracias a nuestra nueva gama A 110, seguimos escalando todos los niveles del deporte automovilístico. Mañana, queremos reinventar el deporte automovilístico con tecnologías innovadoras de la Fórmula 1 para pilotos apasionados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p>Proyecto sobre Alpine - Colegio León de Greiff</p>
+            <p>&copy; 2024 Oscar Felipe Pino Grajales</p>
+            <p>Última actualización: Marzo de 2024</p>
+        </div>
+    </footer>
+    <!--BootstrapJS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
